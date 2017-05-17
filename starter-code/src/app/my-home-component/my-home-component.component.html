@@ -1,0 +1,10 @@
+<p>
+  PELICULONES DE LA GALAXIA JAUE
+</p>
+
+        <div *ngFor="let movie of movies">
+          <a [routerLink]="['/movie', movie.id]">
+            <p>{{movie.title}}</p>
+            <img src="{{movie.poster}}" alt="">
+          </a>
+        </div>
